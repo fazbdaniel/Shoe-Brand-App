@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "name": "Running Shoe",
+    "image": "shoe (1).jpeg",
+    "description": "Comfortable and stylish for your runs."
+  },
+  {
+    "id": 2,
+    "name": "Walking Shoe",
+    "image": "shoe (1).webp",
+    "description": "Perfect for casual walks and strolls, blablabla."
+  },
+  {
+    "id": 3,
+    "name": "Running Shoe",
+    "image": "shoe (2).jpeg",
+    "description": "Comfortable and stylish for your runs."
+  },
+  {
+    "id": 4,
+    "name": "Walking Shoe",
+    "image": "shoe (2).webp",
+    "description": "Perfect for casual walks and strolls, blablabla."
+  },
+  {
+    "id": 5,
+    "name": "Running Shoe",
+    "image": "shoe (3).jpeg",
+    "description": "Comfortable and stylish for your runs."
+  },
+  {
+    "id": 6,
+    "name": "Walking Shoe",
+    "image": "shoe (4).jpeg",
+    "description": "Perfect for casual walks and strolls, blablabla."
+  },
+  {
+    "id": 1,
+    "name": "Running Shoe",
+    "image": "shoe (1).jpeg",
+    "description": "Comfortable and stylish for your runs."
+  },
+  {
+    "id": 2,
+    "name": "Walking Shoe",
+    "image": "shoe (1).webp",
+    "description": "Perfect for casual walks and strolls, blablabla."
+  },
+  {
+    "id": 3,
+    "name": "Running Shoe",
+    "image": "shoe (2).jpeg",
+    "description": "Comfortable and stylish for your runs."
+  },
+  {
+    "id": 4,
+    "name": "Walking Shoe",
+    "image": "shoe (2).webp",
+    "description": "Perfect for casual walks and strolls, blablabla."
+  },
+  {
+    "id": 5,
+    "name": "Running Shoe",
+    "image": "shoe (3).jpeg",
+    "description": "Comfortable and stylish for your runs."
+  },
+  {
+    "id": 6,
+    "name": "Walking Shoe",
+    "image": "shoe (4).jpeg",
+    "description": "Perfect for casual walks and strolls, blablabla."
+  }
+]
