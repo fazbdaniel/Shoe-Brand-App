@@ -1,4 +1,3 @@
-/* ProductPage.css */
 .product-page {
     padding: 2rem;
     height: 100vh;
@@ -20,24 +19,24 @@
     display: flex;
     align-items: center;
     position: relative;
-    overflow-x: auto; /* Change to "auto" instead of "hidden" */
-    scrollbar-width: none; /* Hide scrollbar for cleaner look */
-    -ms-overflow-style: none; /* Hide scrollbar for Microsoft browsers */
+    overflow-x: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
   }
   
   .product-cards-wrapper {
-    overflow: hidden; /* Hide the scrollbar but allow content overflow */
+    overflow: hidden;
   }
   
   .product-cards {
     display: flex;
-    gap: 2rem; /* Adjust gap as needed */
+    gap: 2rem; 
     flex-shrink: 0;
     scroll-snap-type: x mandatory;
-    overflow-x: auto; /* Enable horizontal scrolling */
-    -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS */
-    margin-bottom: -20px; /* Add negative margin to counteract margin collapse */
-    padding-bottom: 20px; /* Add padding to create space for scrollbar */
+    overflow-x: auto; 
+    -webkit-overflow-scrolling: touch;
+    margin-bottom: -20px;
+    padding-bottom: 20px;
   }
 
   .product-cards::-webkit-scrollbar {
@@ -47,7 +46,7 @@
   
   .product-card {
     flex: 0 0 auto;
-    width: 250px; /* Customize width as needed */
+    width: 250px; 
     scroll-snap-align: start;
   }
   
@@ -73,50 +72,50 @@
   }
 
   .scroll-icon:hover {
-    transform: scale(1.1); /* Increase size on hover */
-    box-shadow: 0px 4px 8px rgba(249, 38, 38, 0.5); /* Shadow on hover */
+    transform: scale(1.1);
+    box-shadow: 0px 4px 8px rgba(249, 38, 38, 0.5); 
   }
 
   .scroll-icon.clicked {
-    background-color: #f92626; /* Change background color on click */
-    box-shadow: none; /* Remove box shadow on click */
-    color: #ffffff; /* Change icon color on click */
+    background-color: #f92626; 
+    box-shadow: none; 
+    color: #ffffff; 
   }
   
   .scroll-icon-spacing {
-    width: 2rem; /* Adjust spacing as needed */
+    width: 2rem; 
   }
 
   .card-img-top {
-    height: 200px; /* Adjust the height as needed */
-    object-fit: cover; /* Maintain aspect ratio and cover the container */
+    height: 200px; 
+    object-fit: cover; 
   }
 
   .product-card.card {
-    border: none; /* Remove the border */
-    transition: transform 0.3s, background-color 0.3s; /* Add transition for smooth growth and background-color change */
-    position: relative; /* Add position relative for pseudo-element */
+    border: none; 
+    transition: transform 0.3s, background-color 0.3s; 
+    position: relative; 
   }
   
   .product-card.card:hover {
-    transform: scale(1.05); /* Slightly increase size on hover */
-    background-color: transparent; /* Set initial background color to transparent */
+    transform: scale(1.05); 
+    background-color: transparent; 
   }
   
   .product-card.card::before {
-    content: ""; /* Create a pseudo-element for the gradient overlay */
+    content: ""; 
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     background-image: linear-gradient(to top, rgba(249, 38, 38, 0.4) 20%, transparent);
-    pointer-events: none; /* Ensure pseudo-element doesn't interfere with content */
-    z-index: -1; /* Place the pseudo-element behind the content */
-    opacity: 0; /* Initially hide the gradient */
-    transition: opacity 0.3s; /* Add transition for smooth opacity change */
+    pointer-events: none; 
+    z-index: -1; 
+    opacity: 0; 
+    transition: opacity 0.3s; 
   }
   
   .product-card.card:hover::before {
-    opacity: 1; /* Show the gradient overlay on hover */
+    opacity: 1; 
   }

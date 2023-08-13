@@ -3,21 +3,21 @@ import "./products.css";
 import productsData from "../assets/products.json";
 
 const Products = () => {
-  const carouselRef = useRef(null); // Create a ref for the carousel container
+  const carouselRef = useRef(null);
   const handleScroll = (direction) => {
-    const scrollDistance = 300; // Adjust as needed
+    const scrollDistance = 300;
     if (carouselRef.current) {
       if (direction === "left") {
         console.log("Scrolling left");
         carouselRef.current.scrollTo({
           left: carouselRef.current.scrollLeft - scrollDistance,
-          behavior: "smooth", // Add smooth scrolling behavior
+          behavior: "smooth",
         });
       } else {
         console.log("Scrolling right");
         carouselRef.current.scrollTo({
           left: carouselRef.current.scrollLeft + scrollDistance,
-          behavior: "smooth", // Add smooth scrolling behavior
+          behavior: "smooth",
         });
       }
     }
@@ -32,15 +32,12 @@ const Products = () => {
         </div>
 
         <div className="col-6 d-flex justify-content-end align-items-center">
-          {/* Scrolling left icon */}
           <div className="scroll-icon" onClick={() => handleScroll("left")}>
             <i className="fas fa-chevron-left"></i>
           </div>
 
-          {/* Spacing between icons */}
           <div className="scroll-icon-spacing"></div>
 
-          {/* Scrolling right icon */}
           <div className="scroll-icon" onClick={() => handleScroll("right")}>
             <i className="fas fa-chevron-right"></i>
           </div>
