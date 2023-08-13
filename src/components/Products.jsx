@@ -47,29 +47,29 @@ const Products = () => {
         </div>
       </div>
 
-      <div className="row">
-        <div className="col-12">
-          <div className="product-carousel" ref={carouselRef}>
-            <div className="product-cards">
-              {productsData.map((product) => (
-                <div key={product.id} className="product-card card">
-                  <img
-                    src={process.env.PUBLIC_URL + `/images/${product.image}`}
-                    alt={product.name}
-                    className="card-img-top"
-                  />
-                  <div className="card-body">
-                    <h5 className="card-title">{product.name}</h5>
-                    <p className="card-text">{product.description}</p>
-                    <div className="d-flex justify-content-between align-items-center">
-                      <button className="btn btn-primary">Buy Now</button>
-                      <p className="text-muted">${product.price}</p>
-                    </div>
+      <div className="row product-carousel" ref={carouselRef}>
+        <div className="col-12" ref={carouselRef}>
+        <div className="product-cards-wrapper" ref={carouselRef}>
+        <div className="product-cards" ref={carouselRef}>
+            {productsData.map((product) => (
+              <div key={product.id} className="product-card card" ref={carouselRef}>
+                <img
+                  src={process.env.PUBLIC_URL + `/images/${product.image}`}
+                  alt={product.name}
+                  className="card-img-top"
+                />
+                <div className="card-body">
+                  <h5 className="card-title">{product.name}</h5>
+                  <p className="card-text">{product.description}</p>
+                  <div className="d-flex justify-content-between align-items-center">
+                    <button className="btn btn-primary">Buy Now</button>
+                    <p className="text-muted">${product.price}</p>
                   </div>
                 </div>
-              ))}
-            </div>
+              </div>
+            ))}
           </div>
+        </div>
         </div>
       </div>
     </div>
