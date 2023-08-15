@@ -13,7 +13,7 @@ const Contacts = () => {
             </p>
             <div className="contact-info">
               <p>Email: info@shoeshop.com</p>
-              <p>Phone: +1 (123) 456-7890</p>
+              <p>Phone: +xxx xxx xxxxxx</p>
               <p>Address: 123 Shoe Street, City, Country</p>
             </div>
           </div>
