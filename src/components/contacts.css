@@ -1,0 +1,27 @@
+.contacts {
+    padding: 4rem 0;
+    background-color: #000000;
+    text-align: center;
+  }
+  
+  .contacts-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 2rem;
+  }
+  
+  .contacts-text {
+    font-size: 1.2rem;
+    color: #ffffff;
+    margin-bottom: 0.5rem;
+  }
+  
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1rem;
+    color: #ffffff;
+  }
+  

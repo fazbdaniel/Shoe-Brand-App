@@ -1,6 +1,10 @@
+import React, { lazy, Suspense } from 'react';
 import "./App.css";
-import {HeroSection, Navigation, Products} from "./components";
+import {HeroSection, Navigation, Products, About, Contacts} from "./components";
+
 import '@fortawesome/fontawesome-free/css/all.min.css';
+
+const LocationLazy = lazy(() => import('./components/Location'));
 
 const App = () => {
   return (
@@ -8,6 +12,11 @@ const App = () => {
       <Navigation />
       <HeroSection />
       <Products/>
+      <Suspense fallback={<div>Loading...</div>}>
+        <LocationLazy />
+      </Suspense>
+      <About/>
+      <Contacts/>
     </div>
   );
 };
