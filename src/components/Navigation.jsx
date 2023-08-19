@@ -22,7 +22,7 @@ const Navigation = () => {
         <li><a href="#products">Products</a></li>
         <li><a href="#location">Location</a></li>
         <li><a href="#about">About</a></li>
-        <li><a href="#contacts">Contact</a></li>
+        <li><a href="#contacts">Contacts</a></li>
       </ul>
       <button className="btn btn-primary">Login</button>
     </nav>

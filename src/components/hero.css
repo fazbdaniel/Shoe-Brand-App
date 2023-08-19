@@ -35,3 +35,11 @@
     gap: 1rem;
   }
   
+  @media (max-width: 767px) {
+    .hero {
+      margin-top: 150px;
+    }
+    .btn-group Button{
+      font-size: 0.8rem;
+    }
+  }

@@ -1,121 +1,113 @@
 .product-page {
-    padding: 2rem;
-    height: 100vh;
-    padding-top: 4rem;
-  }
-  
-  .sub-title {
-    font-size: 34px;
-    color: #f92626;
-  }
+  padding: 2rem;
+  height: 100vh;
+  padding-top: 4rem;
+}
 
-  .product-title {
-    font-size: 54px;
-    font-weight: bold;
-    margin-bottom: 1rem;
-  }
-  
-  .product-carousel {
-    display: flex;
-    align-items: center;
-    position: relative;
-    overflow-x: auto;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-  }
-  
-  .product-cards-wrapper {
-    overflow: hidden;
-  }
-  
-  .product-cards {
-    display: flex;
-    gap: 2rem; 
-    flex-shrink: 0;
-    scroll-snap-type: x mandatory;
-    overflow-x: auto; 
-    -webkit-overflow-scrolling: touch;
-    margin-bottom: -20px;
-    padding-bottom: 20px;
-  }
+.sub-title {
+  font-size: 34px;
+  color: #f92626;
+}
 
-  .product-cards::-webkit-scrollbar {
-    width: 0;
-    background: transparent;
-  }
-  
-  .product-card {
-    flex: 0 0 auto;
-    width: 250px; 
-    scroll-snap-align: start;
-  }
-  
-  .left {
-    left: 0;
-  }
-  
-  .right {
-    right: 0;
-  }
-  
-  .scroll-icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 40px;
-    height: 40px;
-    background-color: #ffffff;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-    pointer-events: auto;
-    transition: all 0.3s;
-  }
+.product-title {
+  font-size: 54px;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
 
-  .scroll-icon:hover {
-    transform: scale(1.1);
-    box-shadow: 0px 4px 8px rgba(249, 38, 38, 0.5); 
-  }
+.product-carousel {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
 
-  .scroll-icon.clicked {
-    background-color: #f92626; 
-    box-shadow: none; 
-    color: #ffffff; 
-  }
-  
-  .scroll-icon-spacing {
-    width: 2rem; 
-  }
+.product-cards {
+  display: flex;
+  gap: 2rem;
+  flex-shrink: 0;
+  scroll-snap-type: x mandatory;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-bottom: -20px;
+  padding-bottom: 20px;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
 
-  .card-img-top {
-    height: 200px; 
-    object-fit: cover; 
-  }
+.product-cards::-webkit-scrollbar-track {
+  background: white;
+}
 
-  .product-card.card {
-    border: none; 
-    transition: transform 0.3s, background-color 0.3s; 
-    position: relative; 
-  }
-  
-  .product-card.card:hover {
-    transform: scale(1.05); 
-    background-color: transparent; 
-  }
-  
-  .product-card.card::before {
-    content: ""; 
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: linear-gradient(to top, rgba(249, 38, 38, 0.4) 20%, transparent);
-    pointer-events: none; 
-    z-index: -1; 
-    opacity: 0; 
-    transition: opacity 0.3s; 
-  }
-  
-  .product-card.card:hover::before {
-    opacity: 1; 
-  }
+.product-cards::-webkit-scrollbar-thumb {
+  background-color: #fff;
+}
+
+.product-card {
+  flex: 0 0 auto;
+  width: 200px;
+}
+
+.scroll-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: #ffffff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.scroll-icon:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 4px 8px rgba(249, 38, 38, 0.5);
+}
+
+.scroll-icon.clicked {
+  background-color: #f92626;
+  box-shadow: none;
+  color: #ffffff;
+}
+
+.scroll-icon-spacing {
+  width: 2rem;
+}
+
+.card-img-top {
+  height: 150px;
+  object-fit: cover;
+}
+
+.product-card.card {
+  border: none;
+  transition: transform 0.3s, background-color 0.3s;
+  position: relative;
+}
+
+.product-card.card:hover {
+  transform: scale(1.05);
+  background-color: transparent;
+}
+
+.product-card.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: linear-gradient(
+    to top,
+    rgba(249, 38, 38, 0.4) 20%,
+    transparent
+  );
+  pointer-events: none;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.product-card.card:hover::before {
+  opacity: 1;
+}
