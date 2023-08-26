@@ -1,7 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import "./contacts.css";
 
 const Contacts = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log("Name:", name);
+    console.log("Email:", email);
+    console.log("Message:", message);
+  };
+
   return (
     <section className="contacts" id="contacts">
       <div className="container">
@@ -12,9 +23,41 @@ const Contacts = () => {
               Have questions or inquiries? Reach out to us!
             </p>
             <div className="contact-info">
-              <p>Email: info@shoeshop.com</p>
-              <p>Phone: +xxx xxx xxxxxx</p>
-              <p>Address: 123 Shoe Street, City, Country</p>
+              <form onSubmit={handleSubmit}>
+                <div className="mb-3">
+                  <input
+                    type="text"
+                    id="name"
+                    className="form-control"
+                    placeholder="Your name"
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
+                  />
+                </div>
+                <div className="mb-3">
+                  <input
+                    type="email"
+                    id="email"
+                    className="form-control"
+                    placeholder="Your email address"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                  />
+                </div>
+                <div className="mb-3">
+                  <textarea
+                    id="message"
+                    className="form-control"
+                    rows="3"
+                    placeholder="Your message"
+                    value={message}
+                    onChange={(e) => setMessage(e.target.value)}
+                  />
+                </div>
+                <button type="submit" className="btn btn-primary">
+                  Submit
+                </button>
+              </form>
             </div>
           </div>
         </div>
@@ -24,3 +67,5 @@ const Contacts = () => {
 };
 
 export default Contacts;
+
+
